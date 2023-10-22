@@ -35,10 +35,7 @@ const Login = () => {
             <div className='loginContainer'>
                 <h1  >WELCOME FOTOFUSION! </h1>
                 <div className='loginForm'>
-                    <form
-                        form={form}
-                        style={{ maxWidth:  365 }}
-                        >
+                    <form  form={form} style={{ maxWidth:  365 }} >
                         <span>Email</span>
                         <input
                             className='inputEmail'

@@ -1,9 +1,7 @@
 .homeTableProduct {
     display: flex;
     flex-wrap: wrap;
-    gap: 73px;
-
-
+    gap: 68px;
 
     @media screen and (max-width: 1365px) {
         gap: 20px;
@@ -12,12 +10,20 @@
     .itemForm {
         cursor: pointer;
         border-radius: 5px;
-        width: 380.91px;
-        height: 610.169px;
         background: #C4C4C4;
 
         transition-property: transform;
         transition-duration: 300ms;
+
+        @media screen and (min-width: 1300) {
+            width: 280.91px;
+            height: 610.169px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            width: 380.91px;
+            height: 610.169px;
+        }
 
         &:hover {
             transform: rotate(2deg);
@@ -73,4 +79,6 @@
             }
         }
     }
+
+
 }

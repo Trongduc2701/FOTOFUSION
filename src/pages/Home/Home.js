@@ -16,7 +16,6 @@ const Home = () => {
     return (
         <div className='homeContainter'>
             <img className='bgHome' src={BgHome} alt='bgHOme'/>
-            
             <div className='partOverview' >
                 <div className='homeFotofusion'>
                     <span className='textfotofusion'>FOTOFUSION</span>

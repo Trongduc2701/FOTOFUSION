@@ -28,6 +28,9 @@ import Login from './../pages/Login/Login';
 import SignUp from "../pages/Signup/Signup";
 import ForgotPassWord from "../pages/ForgotPassWord/ForgotPassWord";
 import ChangePassWord from "../pages/ChangePassWord/ChangePassWord";
+import BookingOnline from "../pages/BookingOnline/BookingOnline";
+import BookingAlbum from "../pages/BookingAlbum/BookingAlbum";
+import AlbumsPhotoPage from "../pages/AlbumsPhotoPage/AlbumsPhotoPage";
 
 const Router = () => {
 
@@ -71,26 +74,24 @@ const Router = () => {
             </MainLayout>}
         />
         <Route
-          path="/field/:id" element={
+          path="/booking" element={
             <MainLayout>
-              <Home />
+              <BookingOnline />
             </MainLayout>}
         />
         <Route
-          path="kols/:id"
-          element={
+          path="/booking-album" element={
             <MainLayout>
-              <p>Page</p>
+              <BookingAlbum />
             </MainLayout>}
         />
-        <Route
-          path="chat/:id"
-          element={
+         <Route
+          path="/albums-photo" element={
             <MainLayout>
-              <p>Page</p>
+              <AlbumsPhotoPage />
             </MainLayout>}
         />
-        <Route
+        {/* <Route
           path="ents/:id"
           element=
           {
@@ -98,12 +99,8 @@ const Router = () => {
               <ProtectedRoute Component={ <p>Page</p>} />
             </MainLayout>
           }
-        />
+        /> */}
 
-        <Route
-          path="/vnpay/return"
-          element={<ProtectedRoute Component={ <p>Page</p>} />}
-        />
       </Routes>
     </BrowserRouter>
   );

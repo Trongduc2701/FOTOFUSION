@@ -7,8 +7,12 @@ import IcPinterest from './../../assets/icon/ic-pinterest';
 import IcTwiter from '../../assets/icon/ic-twiter';
 import IcLogo from '../../assets/logo/IcLogo';
 import IconCollapse from '../../assets/icon/ic-collapse';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Header = () => {
+    const navigate = useNavigate(); 
+    function linkToHome() {
+        navigate('/home');
+    }
     return (
         <div className='headerMain' >
             <div className='headerTop'>
@@ -32,7 +36,7 @@ const Header = () => {
             
             <div className='headerContainer'>
                 <div className='headerMenu'>
-                    <div className='headerLogo'>
+                    <div className='headerLogo' onClick={linkToHome}>
                         <IcLogo />
                         <span>FutoFusion</span>
                     </div>
@@ -41,7 +45,7 @@ const Header = () => {
                                 <Link to='/home'  className='itemMenu'>
                                     Home
                                 </Link>
-                                <Link to='/albums'  className='itemMenu'>
+                                <Link to='/albums-photo'  className='itemMenu'>
                                     Album
                                 </Link>
                                 <Link to='/Pages'  className='itemMenu'>
@@ -62,9 +66,9 @@ const Header = () => {
                                 </Link>
                             </div>
                             <div className='headerMenuBooking'>
-                                <button>
+                                <Link to='/booking' >
                                     Booking
-                                </button>
+                                </Link>
                         </div>
                     </div>
                    

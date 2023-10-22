@@ -6,7 +6,7 @@ $button-active-blue: #1669F2;
 .loginContainer {
     display: block;
     position: absolute;
-    top: 214px;
+    top: 161px;
     left: 204px;
     width: 35%;
 
@@ -27,7 +27,7 @@ $button-active-blue: #1669F2;
         .inputEmail {
             margin-top: 10px;
             margin-bottom: 20px;
-            width: 300px;
+            width: 100%;
             display: flex;
             padding: 10px 32px;
             align-items: flex-start;
@@ -41,6 +41,7 @@ $button-active-blue: #1669F2;
 
         .passwordInput {
             margin-top: 10px;
+            margin-bottom: 20px;
             display: flex;
             align-items: flex-start;
             gap: 10px;
@@ -100,19 +101,23 @@ $button-active-blue: #1669F2;
         }
 
         .forgotPassword {
-            cursor: pointer;
             margin-top: 10px;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
 
+            .linkTO {
+                color: rgba(255, 194, 27, 0.25);
+                margin-left: 10px;
+                text-decoration: none;
+            }
+
             span {
-                cursor: pointer;
+                font-size: 14px;
                 height: 34px;
                 flex-shrink: 0;
                 color: #b6b7bd;
                 font-family: Nunito;
-                font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -191,7 +196,7 @@ $button-active-blue: #1669F2;
     .btn-text {
         float: left;
         margin-top: 0px;
-        padding: 6px 20px 10px 80px;
+        padding: 6px 18px 10px 80px;
         color: $white;
         font-size: 27px;
         letter-spacing: 0.2px;
