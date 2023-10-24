@@ -113,9 +113,9 @@
                         user-select: none;
                         cursor: pointer;
                         font-weight: bold;
-                        color: #ffffff;
+                        color: #D3924C;
                         &:hover {
-                            border-bottom: 3px solid #D3924C;
+                            border-bottom: 3px solid #4285f4;
                             padding-bottom: 6px;
                         }
 
@@ -124,9 +124,9 @@
                     .itemMenu {
                         text-align: center;
                         font-family: Inter;
-                        font-size: 18px;
+                        font-size: 22px;
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 800;
                         line-height: normal;
                         display: flex;
                         align-items: center;
