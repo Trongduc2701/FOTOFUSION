@@ -20,7 +20,7 @@ const ChangePassWord = () => {
             <img className='ForgotRight'  style={{ height: height}} src={ForgotRight} alt={'loginbg'} />
             
             <div className='formForgot'>
-                <h3>CHANGE PASSWORD</h3>
+                <h3>Thay đổi mật khẩu</h3>
                 <div 
                     style={{ maxWidth: 365 }}
                     className='loginForm'
@@ -37,7 +37,7 @@ const ChangePassWord = () => {
                     
                     
                         <div className='inputCodeChange'>
-                            <span > Old Password</span>
+                            <span > Mật khẩu cũ</span>
                             <div className='passwordInput'>
                                 <input 
                                     type={ 'password'}
@@ -49,7 +49,7 @@ const ChangePassWord = () => {
                     </div>
                     
                         <div className='inputCodeChange'>
-                            <span > New Password</span>
+                            <span > Mật khẩu mới</span>
                             <div className='passwordInput'>
                                 <input 
                                     type={ 'password'}

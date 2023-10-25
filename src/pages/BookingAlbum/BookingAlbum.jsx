@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BookingBG from '../../assets/images/booking-bg.png'
 import FormBookingBG from '../../assets/images/formbooking-bg.png'
 
@@ -7,8 +7,6 @@ import {
   DatePicker,
   Form,
   Input,
-  Radio,
-  Select,
   TimePicker,
 } from 'antd';
 import Footer from '../Footer/Footer';
@@ -22,6 +20,9 @@ const BookingAlbum = () => {
     function handleChange(value) {
          console.log(`selected ${value}`);
     }
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='bookingContainer'>
             <img src={BookingBG} style={{ width: width, height: height, objectFit: 'cover' }} />

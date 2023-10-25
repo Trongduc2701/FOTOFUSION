@@ -12,7 +12,12 @@ import Footer from './../Footer/Footer';
 import MemberTakePhotos from './../../components/ImageGroup/MemberTakePhotos/MemberTakePhotos';
 import CategoryProductGroup from './../../components/ImageGroup/CategoryProductGroup/CategoryProductGroup';
 import TopSellerProducts from './../../components/ImageGroup/TopSellerProducts/TopSellerProducts';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate('/booking');
+    }
     return (
         <div className='homeContainter'>
             <img className='bgHome' src={BgHome} alt='bgHOme' />
@@ -20,11 +25,11 @@ const Home = () => {
                 <div className='homeFotofusion'>
                     <span className='textfotofusion'>FOTOFUSION</span>
                     <span className='textPlace'>A place to preserve beautiful moments and more</span>
-                    <buton className='btnGet'>
+                    <button onClick={handleClick}  className='btnGet'>
                         <span>
-                            GET IT NOW
+                            Đặt lịch ngay
                         </span>
-                    </buton>
+                    </button>
                 </div>
                 <div className='chatBox'>
                     <div className='messegeDemo'>
@@ -42,8 +47,8 @@ const Home = () => {
                 {/* CATEGORY PRODUCT */}
                 <div className='partCategory'>
                     <span className='namePart'>
-                        <span className='textTiltle'>CATEGORY</span>
-                        <span className='textTiltleYellow'>PRODUCT</span>
+                        <span className='textTiltle'>DANH MỤC</span>
+                        <span className='textTiltleYellow'>SẢN PHẨM</span>
                     </span>
                     <div className='tablePart'>
                         <CategoryProductGroup />
@@ -53,8 +58,8 @@ const Home = () => {
                 {/* TOP SELLER PRODUCTs */}
                 <div className='partCategory'>
                     <span className='namePart'>
-                        <span className='textTiltle'>Top Seller</span>
-                        <span className='textTiltleYellow'>Products</span>
+                        <span className='textTiltle'>SẢN PHẨM</span>
+                        <span className='textTiltleYellow'>KHUYỄN MÃI</span>
                     </span>
                     <div className='tablePart'>
                         <TopSellerProducts />
@@ -62,8 +67,8 @@ const Home = () => {
                 </div>
                 <div className='partCategory' >
                     <span className='namePart'>
-                        <span className='textTiltle'>MEMBERS</span>
-                        <span className='textTiltleYellow'>TAKE PHOTOS</span>
+                        <span className='textTiltle'>THÀNH VIÊN</span>
+                        <span className='textTiltleYellow'>STUDIO</span>
                     </span>
                     <div className='tablePart'>
                         <MemberTakePhotos data={[]} />

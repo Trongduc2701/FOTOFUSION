@@ -21,7 +21,7 @@ const ForgotPassWord = () => {
             <img className='ForgotRight'  style={{ height: height}} src={ForgotRight} alt={'loginbg'} />
             
             <div className='formForgot'>
-                <h3>FORGOT PASSWORD</h3>
+                <h3>Quên mật khẩu</h3>
                 <div 
                     style={{ maxWidth: 365 }}
                     className='loginForm'
@@ -34,11 +34,11 @@ const ForgotPassWord = () => {
                             placeholder='fotofusion@gmail.com'
                         />
                         
-                        <button className='btnSendCode' onClick={onSubmit}  ype="button">Send Code</button>
+                        <button className='btnSendCode' onClick={onSubmit}  ype="button">Gửi email</button>
                     
 
                         <div className='inputCode'>
-                            <span > INPUT CODE</span>
+                            <span >Mã gửi về trong email</span>
                             <div className='passwordInput'>
                                 <input 
                                     type={showPassword ? 'text' : 'password'}
@@ -48,7 +48,7 @@ const ForgotPassWord = () => {
                             </div>
                         </div>
                      
-                        <button className='btnSubmit' onClick={onSubmit}   type="button">CONFIRM</button>
+                        <button className='btnSubmit' onClick={onSubmit}   type="button">Xác nhận</button>
 
                        <svg xmlns="http://www.w3.org/2000/svg" width="360" height="2" viewBox="0 0 480 2" fill="none">
                         <path d="M0 1H480" stroke="#C8D3F9" stroke-width="2"/>

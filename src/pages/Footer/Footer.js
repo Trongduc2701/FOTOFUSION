@@ -26,7 +26,7 @@ const Footer = () => {
                   <div className='headerInfo'>
                       <IcContactFT />
                       <div className='contentFT' >
-                        <span className='textContent'>Call Us</span>
+                        <span className='textContent'>Liên hệ</span>
                         <span className='textContentValue'>+84 569 896 654</span>
                       </div>
                   </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                   <div className='headerInfo'>
                       <IcMailFT />
                       <div className='contentFT' >
-                        <span className='textContent'>Mail Us</span>
+                        <span className='textContent'>Gửi thư về</span>
                         <span className='textContentValue'>fotofusion@gmail.com</span>
                       </div>
                   </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                   <div className='headerInfo'>
                       <IcLocationFT />
                       <div className='contentFT' >
-                        <span className='textContent'>Location</span>
+                        <span className='textContent'>Địa chỉ</span>
                         <span className='textContentValue'>254-Nguyen Van Linh  Hai Chau-Da Nang</span>
                       </div>
                   </div>

@@ -33,7 +33,7 @@ const Login = () => {
         <div className='mainLogin' style={{ width: width, height: height, objectFit: 'cover' }}>
             <img className='bgContainerLogin' style={{ width: width, height: height }} src={LoginBG} alt={'loginbg'} />
             <div className='loginContainer'>
-                <h1 >WELCOME FOTOFUSION! </h1>
+                <h1 style={{padding: '20px 0px'}} >Đăng nhập</h1>
                 <div className='loginForm'>
                     <form form={form} style={{ maxWidth: 365 }} >
                         <span>Email</span>
@@ -43,7 +43,7 @@ const Login = () => {
                             placeholder='fotofusion@gmail.com'
                         />
 
-                        <span style={{ marginTop: 20 }}>Password</span>
+                        <span style={{ marginTop: 20 }}>Mật khẩu</span>
                         <div className='passwordInput'>
                             <input
                                 style={{ width: '80%' }}
@@ -56,17 +56,17 @@ const Login = () => {
                             </button>
                         </div>
                         <div className='forgotPassword'>
-                            <span className='forgotPass' onClick={linkToForgotPass}> Forgot Password</span>
+                            <span className='forgotPass' onClick={linkToForgotPass}> Quên mật khẩu</span>
                         </div>
-                        <button className='btnSubmit' onClick={onSubmit} type="button">Login</button>
-                        <button className='btnSubmit' onClick={linkToSignup} type="button">Sign Up</button>
-                        <span className='Or'>----------------Or----------------</span>
+                        <button className='btnSubmit' onClick={onSubmit} type="button">Đăng nhập</button>
+                        <button className='btnSubmit' onClick={linkToSignup} type="button">Đăng ký</button>
+                        <span className='Or'>----------------Hoặc----------------</span>
 
-                        <div class="google-btn">
-                            <div class="google-icon-wrapper">
-                                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                        <div className="google-btn">
+                            <div className="google-icon-wrapper">
+                                <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
                             </div>
-                            <p class="btn-text"><b>Sign in with google</b></p>
+                            <p className="btn-text"><b>Đăng nhập với google</b></p>
                         </div>
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="360" height="2" viewBox="0 0 480 2" fill="none">

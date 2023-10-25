@@ -14,21 +14,21 @@ const MemberTakePhotos = (data) => {
                  <ProfileMembers
                     name='Lê Bình Nguyên'
                     avatar={Avatar}
-                    role='founder'
+                    role='FOUNDER'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />
                 <ProfileMembers
                     avatar={Avatar}
                     name='Lê Bình Nguyên'
-                    role='founder'
+                    role='FOUNDER'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />
                 <ProfileMembers
                     avatar={Avatar}
                     name='Lê Bình Nguyên'
-                    role='founder'
+                    role='PHOTOGRAPH'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />

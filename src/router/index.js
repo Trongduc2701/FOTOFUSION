@@ -31,6 +31,8 @@ import ChangePassWord from "../pages/ChangePassWord/ChangePassWord";
 import BookingOnline from "../pages/BookingOnline/BookingOnline";
 import BookingAlbum from "../pages/BookingAlbum/BookingAlbum";
 import AlbumsPhotoPage from "../pages/AlbumsPhotoPage/AlbumsPhotoPage";
+import BlogDetailPage from "../pages/BlogDetail/BlogDetailPage";
+import BlogPage from "../pages/BlogPage/BlogPage";
 
 const Router = () => {
 
@@ -85,12 +87,26 @@ const Router = () => {
               <BookingAlbum />
             </MainLayout>}
         />
-         <Route
+        <Route
           path="/albums-photo" element={
             <MainLayout>
               <AlbumsPhotoPage />
             </MainLayout>}
         />
+        <Route
+          path="/blog" element={
+            <MainLayout>
+              <BlogPage />
+            </MainLayout>}
+        />
+        <Route
+          path="/blog/:id" element={
+            <MainLayout>
+              <BlogDetailPage />
+            </MainLayout>}
+        />
+
+
         {/* <Route
           path="ents/:id"
           element=
