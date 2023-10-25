@@ -14,7 +14,7 @@ const SignUp = () => {
      const [phoneNumber, setPhoneNumber] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     
-    const {_,height} = useWindowSize()
+    const {width,height} = useWindowSize()
 
     const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -25,8 +25,8 @@ const SignUp = () => {
     }
     return (
         <div className='mainLogin' style={{ height: height}}>
-            <img className='bgContainerLogin'  style={{ height: height}} src={LoginBG} alt={'loginbg'} />
-            <div className='loginContainer'>
+            <img className='bgContainerLogin'  style={{ width: width, height: height}} src={LoginBG} alt={'loginbg'} />
+            <div className='signupContainer'>
                 <h1  >SIGN UP</h1>
                 <div className='loginForm'>
                     <form

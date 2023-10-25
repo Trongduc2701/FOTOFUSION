@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './Layout.module.scss';
 import Header from './../../pages/Header/Header';
+import { BackTop } from 'antd';
+import { VerticalAlignTopOutlined } from '@ant-design/icons';
 const MainLayout = ({ children }) => {
     return (
-        <div className={styles.mainContainer} >  
-            <Header/>
+        <div className={styles.mainContainer} >
+            <Header />
             {children}
+            <BackTop/>
             {/* <Footer/> */}
         </div>
     );

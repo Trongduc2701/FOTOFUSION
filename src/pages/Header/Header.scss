@@ -88,7 +88,7 @@
                     color: #FFF;
                     margin-left: 4px;
                     font-family: Montserrat;
-                    font-size: 25px;
+                    font-size: 35px;
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
@@ -124,7 +124,7 @@
                     .itemMenu {
                         text-align: center;
                         font-family: Inter;
-                        font-size: 22px;
+                        font-size: 1.9rem;
                         font-style: normal;
                         font-weight: 800;
                         line-height: normal;
@@ -135,6 +135,7 @@
                 }
 
                 .headerMenuBooking {
+                    display: flex;
                     a {
                         display: flex;
                         width: 183px;
@@ -142,7 +143,7 @@
                         border: 4px solid #000;
 
                         background: #D3924C;
-                        padding: 21px 35px 22px 35px;
+                        padding: 12px 20px;
                         justify-content: center;
                         align-items: center;
                         gap: 10px;

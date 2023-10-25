@@ -13,19 +13,20 @@ import {
 } from 'antd';
 import Footer from '../Footer/Footer';
 import TextArea from 'antd/es/input/TextArea';
+import useWindowSize from '../../hook/use-window-size';
 
 const BookingAlbum = () => {
     document.title = 'Booking';
+    const { width, height } = useWindowSize();
 
     function handleChange(value) {
          console.log(`selected ${value}`);
     }
     return (
         <div className='bookingContainer'>
-            <img src={BookingBG} />
-            <span className='title'>Đặt  Chụp Hình Online</span>
+            <img src={BookingBG} style={{ width: width, height: height, objectFit: 'cover' }} />
+            <span className='title'>Đặt Chụp Hình Online</span>
             <div className='partBookingContainer'>
-            
             <Form
                 labelCol={{ span: 4 }}
                 wrapperCol={{ span: 14 }}

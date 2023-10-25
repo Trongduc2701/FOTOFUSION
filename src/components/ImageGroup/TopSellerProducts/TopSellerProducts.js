@@ -123,7 +123,6 @@ const TopSellerProducts = (data) => {
             </div>
 
             <div className='tableTopSeller'>
-                
                 {listProduct?.map((item) => (
                     <CardTopSeller
                         image={item?.image}
