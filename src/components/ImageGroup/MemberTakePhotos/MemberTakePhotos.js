@@ -10,25 +10,25 @@ const MemberTakePhotos = (data) => {
     }
     return (
         <div className='mainContainerTopSeller'>
-            <div className='tableTopSeller' style={{gap: 40}}>
-                 <ProfileMembers
+            <div className='tableTopSeller' style={{ gap: 40 }}>
+                <ProfileMembers
                     name='Lê Bình Nguyên'
                     avatar={Avatar}
-                    role='FOUNDER'
+                    role='founder'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />
                 <ProfileMembers
                     avatar={Avatar}
                     name='Lê Bình Nguyên'
-                    role='FOUNDER'
+                    role='founder'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />
                 <ProfileMembers
                     avatar={Avatar}
                     name='Lê Bình Nguyên'
-                    role='PHOTOGRAPH'
+                    role='founder'
                     fb='fb.com'
                     mail='lebinhgnguyen@gmail.com'
                 />

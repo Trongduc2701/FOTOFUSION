@@ -2,7 +2,7 @@ import React from 'react';
 
 const IcLogo = () => {
     return (
-       <svg width="73" height="55" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <svg width="43" height="30" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Icon">
 <g id="Vector">
 <path d="M14.3756 0.5H8.49649L25.2608 29.5L28.2003 24.4152L14.3756 0.5Z" fill="#D3924C"/>
