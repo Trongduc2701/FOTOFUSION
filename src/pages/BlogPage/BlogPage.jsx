@@ -40,13 +40,12 @@ const BlogPage = () => {
                     </div>
 
                     {/* paging */}
-                    <div class='w-full mt-10 h-10 flex items-center justify-center text-btnprimary'>
+                    <div class='w-full mt-10 h-10 flex items-center justify-center text-btnprimary cursor-pointer'>
                         <div class=' h-10 flex flex-row gap-4'>
                             <div class='w-20 border-1 border-solid border-2  border-btnprimary flex items-center justify-center '>Page 1/3</div>
                             <div class='flex gap-4'>
                                 <div class='w-10 border-1 flex items-center justify-center '>1</div>
                                 <div class='w-10 border-1 border-solid border-2  border-btnprimary flex items-center justify-center '>2</div>
-                                <div class='w-10 border-1 border-solid border-2  border-btnprimary flex items-center justify-center '>3</div>
                                 <div class='w-10 border-1 border-solid border-2  border-btnprimary flex items-center justify-center '>3</div>
                                 <div class='w-10 border-1 border-solid border-2  border-btnprimary flex items-center justify-center '>  <DoubleRightOutlined /></div>
                             </div>

@@ -33,6 +33,7 @@ import BookingAlbum from "../pages/BookingAlbum/BookingAlbum";
 import AlbumsPhotoPage from "../pages/AlbumsPhotoPage/AlbumsPhotoPage";
 import BlogDetailPage from "../pages/BlogDetail/BlogDetailPage";
 import BlogPage from "../pages/BlogPage/BlogPage";
+import OutFit from "../pages/OutFit/OutFit";
 
 const Router = () => {
 
@@ -105,8 +106,12 @@ const Router = () => {
               <BlogDetailPage />
             </MainLayout>}
         />
-
-
+        <Route
+          path="/service/outfit" element={
+            <MainLayout>
+              <OutFit />
+            </MainLayout>}
+        />
         {/* <Route
           path="ents/:id"
           element=
