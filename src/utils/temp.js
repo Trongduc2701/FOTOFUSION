@@ -8,86 +8,96 @@ import TopSeller5 from '../assets/images/topseller5.png'
 import TopSeller6 from '../assets/images/topseller6.png'
 import TopSeller7 from '../assets/images/topseller7.png'
 
+
+// outfit
+import wedding1 from '../assets/images/Temp/wedding1.png'
+import wedding2 from '../assets/images/Temp/wedding2.png'
+import wedding3 from '../assets/images/Temp/wedding3.png'
+import wedding4 from '../assets/images/Temp/wedding4.png'
+import vest1 from '../assets/images/Temp/vest1.png'
+import vest2 from '../assets/images/Temp/vest2.png'
+import vest3 from '../assets/images/Temp/vest3.png'
+
 export default class Temp {
-   static blogList = [
-    {
-        id: 1,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-        bgTop: img1,
-    },
-    {
-        id: 2,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 3,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 4,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
-    {
-        id: 5,
-        imageLink: imageBlog,
-        title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
-        date: 'NovemBer 22, 2021',
-        describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
-    },
+    static blogList = [
+        {
+            id: 1,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+            bgTop: img1,
+        },
+        {
+            id: 2,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 3,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 4,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
+        {
+            id: 5,
+            imageLink: imageBlog,
+            title: 'Canon picture styles Film look - Turn your Canon camera to a Fujifilm',
+            date: 'NovemBer 22, 2021',
+            describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
+        },
     ]
     static listTopSellerProducts = [
         {
@@ -161,5 +171,39 @@ export default class Temp {
             price: 156,
             salePrice: 56,
         },
+    ]
+    static outfit = {
+        weddingDress: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+        vest: [
+            vest1, vest2, vest3, vest3
+        ],
+        bridesmaids: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+        oadai: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+        yearbook: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+        coupleclother: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+        promdress: [
+            wedding1, wedding2, wedding3, wedding4
+        ],
+    }
+    static outfitDetail = {
+        name: 'Váy cưới',
+        data: [
+            wedding1,wedding2,wedding3,wedding4,wedding1,wedding2
+        ]
+    }
+    static asscesoryList=[
+        vest1,vest2,vest3,
+        vest1,vest2,vest3,
+        vest1,vest2,vest3
     ]
 }

@@ -1,3 +1,7 @@
+import AccessoryPage from "../pages/AccessoryPage";
+import OutFitDetailPage from "../pages/OutFitDetailPage";
+import OutFitsPage from "../pages/OutFitsPage";
+import StudioRoomPage from "../pages/StudioRoomPage";
 import { Home, Calendar, Profile, Equipment, BookingAlbums, ForgotPassWord, AlbumsPhotoPage, Login, SignUp, BookingOnline, BlogPage,BlogDetail } from "../pages/index";
 const router = [
   { path: "/", component: Home },
@@ -12,6 +16,10 @@ const router = [
   { path: "/login", component: Login },
   { path: "/signup", component: SignUp },
   { path: "/blog/:id", component: BlogDetail },
+  { path: "/outfits", component: OutFitsPage },
+  { path: "/outfits-detail", component: OutFitDetailPage },
+  { path: "/accessories", component: AccessoryPage },
+  { path: "/studio", component: StudioRoomPage },
 ];
 export { router };
 

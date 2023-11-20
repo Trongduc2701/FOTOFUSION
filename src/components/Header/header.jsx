@@ -163,16 +163,16 @@ function Header() {
                         <a href="#">Quay phim</a>
                       </li>
                       <li className="pb-2">
-                        <a href="#">Trang phục</a>
+                        <a href="/outfits">Trang phục</a>
                       </li>
                       <li className="pb-2">
-                        <a href="#">Thiết bị</a>
+                        <a href="/accessories">Thiết bị</a>
                       </li>
                       <li className="pb-2">
                         <a href="#">Make-up</a>
                       </li>
                       <li className="pb-2">
-                        <a href="#">Phòng studio</a>
+                        <a href="/studio">Phòng studio</a>
                       </li>
                     </ul>
                   </div>}
