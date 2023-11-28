@@ -41,7 +41,7 @@ const BookingAlbum = () => {
                         </div>
 
                         <div className='w-1/2 text-white'>
-                            <Form.Item label="Tên HK">
+                            <Form.Item label="Tên KH">
                                 <Input style={{ marginLeft: 40 }} placeholder='Nhập họ và tên' />
                             </Form.Item>
                             <Form.Item label="Email">

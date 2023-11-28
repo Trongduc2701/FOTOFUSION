@@ -51,7 +51,7 @@ const BookingOnline = () => {
                 >
                     <span className='titleForm'>Thông tin đăng ký</span>
                     <div className='mainForm'>
-                        <Form.Item label="Tên HK">
+                        <Form.Item label="Tên KH">
                             <Input style={{ marginLeft: 40 }} placeholder='Nhập họ và tên' />
                         </Form.Item>
                         <Form.Item label="Email">

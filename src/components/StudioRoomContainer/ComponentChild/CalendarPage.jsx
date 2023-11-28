@@ -72,7 +72,7 @@ const getMonthData = (value) => {
   }
 };
 
-export default function CalendarContainer() {
+export default function CalendarManager() {
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
@@ -113,12 +113,14 @@ export default function CalendarContainer() {
   };
 
   return (
-    <div class='' style={{ padding: '5% 10% 5% 10%' }}>
-      <h1 class='py-20 text-6xl  text-black' >Lịch làm việc</h1>
+    <div class='bg-white w-full p-3  rounded-lg '>
+      <h1 class='py-2 text-4xl bold  text-black' >Lịch làm việc</h1>
       <div class="w-8 h-1 mt-5 bg-transparent border-b-2 border-btnprimary"></div>
       <Alert message={`You selected date: ${selectedValue?.format('YYYY-MM-DD')}`} />
       <Calendar cellRender={cellRender} value={value} onSelect={onSelect} onPanelChange={onPanelChange} />;
 
+
+      // xua hien khi clicj vao mot ngay trong lich
       <Modal
         title={`Lịch làm việc  ${selectedValue?.format('YYYY-MM-DD')}`}
         centered
@@ -148,14 +150,14 @@ export default function CalendarContainer() {
                 },
               ]}
             /> */}
-            
+
           </Col>
           <Col span={16}>
             <h1 class='text-xl font-bold'>  Nội dung cụ thể</h1>
             <Text italic>Ant Design (italic)</Text>
-        </Col>
-      </Row>
-    </Modal>
+          </Col>
+        </Row>
+      </Modal>
     </div >
   );
 }

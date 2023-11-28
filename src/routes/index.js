@@ -1,4 +1,5 @@
 import AccessoryPage from "../pages/AccessoryPage";
+import AdminHomePage from "../pages/AdminHomePage";
 import OutFitDetailPage from "../pages/OutFitDetailPage";
 import OutFitsPage from "../pages/OutFitsPage";
 import StudioRoomPage from "../pages/StudioRoomPage";
@@ -20,6 +21,6 @@ const router = [
   { path: "/outfits-detail", component: OutFitDetailPage },
   { path: "/accessories", component: AccessoryPage },
   { path: "/studio", component: StudioRoomPage },
+  { path: "/admin", component: AdminHomePage },
 ];
 export { router };
-
