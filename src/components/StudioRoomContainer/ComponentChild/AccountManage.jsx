@@ -2,6 +2,7 @@ import { Avatar, Select, Space, Table, Tabs, Tag } from 'antd';
 import React, { useEffect, useState } from 'react';
 import Temp from '../../../utils/temp';
 import Button from '../../helples/button';
+import Search from 'antd/es/input/Search';
 
 const AccountManage = () => {
     const [userList, setUserList] = useState();
@@ -89,31 +90,56 @@ const AccountManage = () => {
             key: '1',
             label: 'Tất cả',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={userList ?? []}
-                    pagination={{
-                        pageSize: 10,
-                    }}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={userList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
+            ,
         },
         {
             key: '2',
             label: 'Đang hoạt động',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={userList ?? []}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={userList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
         {
             key: '3',
             label: 'Đã bị khóa',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={userList ?? []}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={userList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
     ];
 

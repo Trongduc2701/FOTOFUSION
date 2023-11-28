@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Temp from '../../../utils/temp';
 import Button from '../../helples/button';
 import { getDate } from '../../../utils/Utils';
+import Search from 'antd/es/input/Search';
 
 const OrderManage = () => {
     const columns = [
@@ -139,40 +140,73 @@ const OrderManage = () => {
             key: '1',
             label: 'Tất cả',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={productList ?? []}
-                    pagination={{
-                        pageSize: 10,
-                    }}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={productList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
         {
             key: '2',
             label: 'Chờ phê duyệt',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={productList ?? []}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={productList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
         {
             key: '3',
             label: 'Đang hoạt động',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={productList ?? []}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={productList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
         {
             key: '4',
             label: 'Đã bị hủy',
             children:
-                <Table
-                    columns={columns}
-                    dataSource={productList ?? []}
-                />,
+                <>
+                    <Search
+                        style={{ margin: '10px 0px' }}
+                        placeholder='TÌm kiếm theo tên'
+                    />
+                    <Table
+                        columns={columns}
+                        dataSource={productList ?? []}
+                        pagination={{
+                            pageSize: 10,
+                        }}
+                    />
+                </>
         },
     ];
 

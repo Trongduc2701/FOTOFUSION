@@ -28,9 +28,10 @@ const AdminHomeContainer = () => {
     return (
         <div class='pt-[96px] ' >
             <Layout theme="dark" class='flex flex-col items-start justify-start' style={{ minHeight: 996 }} >
-                <Sider theme="dark" >
+                <Sider theme="dark"  >
                     <Menu
                         theme="dark"
+                        style={{height: '100%'}}
                         // selectedKeys={[selectedMenuItem]}
                         onClick={handleMenuClick}
                         mode="inline"
