@@ -1,10 +1,14 @@
-import { Avatar, Form, Modal, Select, Space, Table, Tabs, Tag } from 'antd';
-import React, { useEffect, useState } from 'react';
+import { Avatar, Form, Input, InputNumber, Modal, Select, Slider, Space, Table, Tabs, Tag, Upload } from 'antd';
+import React, { useEffect, useRef, useState } from 'react';
 import Temp from '../../../utils/temp';
 import Button from '../../helples/button';
 import { useNavigate } from 'react-router-dom';
 import Search from 'antd/es/input/Search';
-
+import TextArea from 'antd/es/input/TextArea';
+import { InfoCircleOutlined, PlusOutlined } from '@ant-design/icons';
+import { useQuill } from 'react-quilljs';
+import 'quill/dist/quill.snow.css';
+import { Editor } from '@tinymce/tinymce-react';
 const ProductManage = () => {
     const columns = [
         {
@@ -191,6 +195,25 @@ const ProductManage = () => {
     };
 
     const [open, setOpen] = useState();
+
+    function onSubmit() {
+
+    }
+    const normFile = (e) => {
+        if (Array.isArray(e)) {
+            return e;
+        }
+        return e?.fileList;
+    };
+    const editorRef = useRef(null);
+    const log = () => {
+        if (editorRef.current) {
+            console.log(editorRef.current.getContent());
+        }
+    };
+    function handleOk() {
+
+    }
     return (
         <>
             <div class='bg-white w-full p-3  rounded-lg '>
@@ -204,77 +227,87 @@ const ProductManage = () => {
                 />
             </div>
 
-
             <Modal
                 title="Tạo sản phẩm"
-                centered
                 open={open}
                 onOk={() => setOpen(false)}
                 onCancel={() => setOpen(false)}
-                width={1000}
+                layout="vertical"
+                width={800}
+                footer={[]}
             >
-                {/* <Form
-                    name="basic"
-                    labelAlign='left'
-                    labelCol={{ span: 5 }}
-                    wrapperCol={{ span: 19 }}
-                    style={{ maxWidth: 900 }}
-                    initialValues={{ remember: true }}
-                    autoComplete="off"
-                    onFinish={onSubmit}
+                <Form
+                    labelCol={{
+                        span: 6,
+                    }}
+                    wrapperCol={{
+                        span: 24,
+                    }}
+                    layout='vertical'
+                    style={{ width: '100%' }}
                 >
-                    <Form.Item label="Player" >{pgt.firstName} {pgt?.user_name}</Form.Item>
-                    <Form.Item label="Ngày" name='dateBooking'
-                        rules={[
-                            { required: true, message: 'Bắt buộc chọn ngày' },
-                            { validator: checkDateBooking },]}
-                    >
-                        <DatePicker
-                            placeholder="Chọn ngày"
-                            mode='date'
-                            onChange={(e) => setDateBooking(e)}
-                            value={dateBooking}
-                            style={{ width: '100%' }} />
-                    </Form.Item>
-                    <Form.Item label="Thời gian" name="timefrom"
-                    // rules={[{ required: true, message: 'Bắt buộc chọn giờ' }]}
-                    >
-                        <Space.Compact block >
-                            <TimePicker.RangePicker
-                                format='HH:mm'
-                                placeholder={['Bắt đầu', 'Kết thúc']}
-                                onChange={(e) => setRangeTimeBooking(e)} />
-                        </Space.Compact>
-                        {errorMessage !== '' && <span style={{ color: 'red' }}> {errorMessage}</span>}
+
+                    <Form.Item valuePropName="fileList" getValueFromEvent={normFile}>
+                        <Upload action="/upload.do" listType="picture-card">
+                            <div>
+                                <PlusOutlined />
+                                <div
+                                    style={{
+                                        marginTop: 8,
+                                    }}
+                                >
+                                    Upload
+                                </div>
+                            </div>
+                        </Upload>
                     </Form.Item>
 
-                    <Form.Item label="Tổng tiền">
-                        <Input
-                            style={{ width: '100%', textAlign: 'right', }}
-                            value={priceTotalShow}
-                        />
+
+                    <Form.Item label="Tên sản phẩm" class='w-full'>
+                        <Input />
                     </Form.Item>
-                    <Form.Item
-                        label="Ghi chú"
-                        name="mota"
-                    >
-                        <TextArea
-                            rows={2}
-                            placeholder="Nhập lời nhắn"
-                            onChange={(e) => setNote(e.target.value)}
-                            value={note}
+                    <Form.Item label="Mô tả sản phẩm" class='w-full'>
+                        <Editor
+                            onInit={(evt, editor) => editorRef.current = editor}
+                            initialValue="<p>This is the initial content of the editor.</p>"
+                            init={{
+                                height: 200,
+                                menubar: false,
+                                plugins: [
+                                    'advlist autolink lists link image charmap print preview anchor',
+                                    'searchreplace visualblocks code fullscreen',
+                                    'insertdatetime media table paste code help wordcount'
+                                ],
+                                toolbar: 'undo redo | formatselect | ' +
+                                    'bold italic backcolor | alignleft aligncenter ' +
+                                    'alignright alignjustify | bullist numlist outdent indent | ' +
+                                    'removeformat | help',
+                                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                            }}
                         />
-                        <div style={{ display: 'flex', gap: 20, float: 'right', marginTop: 20 }}>
-                            <Button type="link" htmlType="button" onClick={onCloseModal}>
-                                Hủy
-                            </Button>
-                            <Button type="primary" htmlType="submit" disabled={((errorMessage || errorDate) ? true : false)}>
-                                Submit
-                            </Button>
-                        </div>
                     </Form.Item>
 
-                </Form> */}
+                    <Form.Item label="Danh mục sản phẩm">
+                        <Select />
+                    </Form.Item>
+                    <Form.Item label="Mô tả sản phẩm">
+                        <Input />
+                    </Form.Item>
+                    <Form.Item label="Số lượng sản phẩm">
+                        <InputNumber />
+                    </Form.Item>
+                    <Form.Item label="Giá sản phẩm">
+                        <InputNumber />
+                    </Form.Item>
+                    <div class='flex flex-row justify-end'>
+                        <Button key="submit" type="primary" onClick={()=> setOpen(false) }>
+                            Hủy
+                        </Button>,
+                        <Button key="submit" type="primary" onClick={handleOk}>
+                            Lưu
+                        </Button>,
+                    </div>
+                </Form>
             </Modal>
         </>
     );

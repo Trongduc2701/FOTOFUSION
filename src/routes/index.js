@@ -4,6 +4,7 @@ import OutFitDetailPage from "../pages/OutFitDetailPage";
 import OutFitsPage from "../pages/OutFitsPage";
 import StudioRoomPage from "../pages/StudioRoomPage";
 import { Home, Calendar, Profile, Equipment, BookingAlbums, ForgotPassWord, AlbumsPhotoPage, Login, SignUp, BookingOnline, BlogPage,BlogDetail } from "../pages/index";
+import VoucherPage from "../pages/voucherPage";
 const router = [
   { path: "/", component: Home },
   { path: "/calendar", component: Calendar },
@@ -17,6 +18,7 @@ const router = [
   { path: "/login", component: Login },
   { path: "/signup", component: SignUp },
   { path: "/blog/:id", component: BlogDetail },
+  { path: "/voucher", component: VoucherPage },
   { path: "/outfits", component: OutFitsPage },
   { path: "/outfits-detail", component: OutFitDetailPage },
   { path: "/accessories", component: AccessoryPage },

@@ -99,6 +99,69 @@ export default class Temp {
             describe: 'Novvadays. Fujifilm brings the film look trend comeback. They can shoot JPEC with various build-in filters. Can Canon cameras do the sarne? The answer is yes You can do it for along time ago, but not everyone know it Canon gives you "Picture Style Editor" with many tools to build your own Film look styles 1.„]',
         },
     ]
+    static CalendarList = 
+    [
+        {
+          "date": "2023-08-08",
+          "events": [
+            { "time": "10:30 - 2023-08-08", 'type': 'warning', "content": "This is warning event." },
+            { "time": "12:30 - 2023-08-08",  'type': 'warning',  "content": "This is usual event." }
+          ]
+        },
+        {
+          "date": "2023-08-11",
+          "events": [
+            { "time": "12:30 - 2023-08-08", 'type': 'warning', "content": "This is warning event." },
+            { "time": "14:30 - 2023-01-09",  'type': 'error',"content": "This is usual event." },
+            { "time": "16:30 - 2023-01-09",  'type': 'success',"content": "This is error event." }
+          ]
+        },
+        {
+          "date": "2023-08-15",
+          "events": [
+            { "time": "10:30 - 2023-01-09",  'type': 'warning', "content": "This is warning event" },
+          ]
+        }
+      ]
+      
+    static calenderListInADay = [
+        {
+            id: 1,
+            email: 'abc@gmail.com',
+            phone: '092132132131',
+            date: '22/09/2023',
+            time: '10:12',
+            type: 'ảnh cưới',
+            address: '20 hà văn tính, hòa khánh nam, liên chiểu',
+        },
+        {
+            id: 2,
+            email: 'abcdd@gmail.com',
+            phone: '092132132131',
+            date: '22/09/2023',
+            time: '14:12',
+            type: 'ảnh cưới',
+            address: '20 avsd, hòa khánh nam, liên chiểu',
+        },
+        {
+            id: 3,
+            email: 'abcdd@gmail.com',
+            phone: '092132132131',
+            date: '22/09/2023',
+            time: '16:12',
+            type: 'ảnh cưới',
+            address: '20 ádasdss, hòa khánh nam, liên chiểu',
+        },
+    ]
+    static calendarBooking = {
+        id: 1,
+        email: 'abc@gmail.com',
+        phone: '092132132131',
+        data: '22/09/2023',
+        time: '20:12',
+        type: 'ảnh cưới',
+        address: '20 hà văn tính, hòa khánh nam, liên chiểu',
+    }
     static listTopSellerProducts = [
         {
             id: 1,

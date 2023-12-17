@@ -179,7 +179,7 @@ function Header() {
               </div>
             </li>
             <li>
-              <a className="m-4" href="#">
+              <a className="m-4" href="voucher">
                 {" "}KHUYẾN MÃI
               </a>
             </li>
